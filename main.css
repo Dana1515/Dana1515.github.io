@@ -1,0 +1,387 @@
+body{
+   font-family: 'PT Serif', serif;
+   font-size: 18px;
+}
+.logo{
+    background: url(img/logo.svg) no-repeat;
+    font-size: 18px;
+    padding-left: 80px;
+    margin-left: 150px;
+    text-transform: uppercase;
+    height: 60px;
+    align-items: center;
+    color: white;
+}
+nav,.logo{
+    display: flex;
+	align-items: center;
+}
+nav{
+    width: 100%;
+    background: #633499;
+}
+a {
+        text-decoration: none;
+        color: white;
+}
+
+a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+}
+ul,li{
+    display: flex;
+    padding: 0px;
+    margin: 0px 40px 0px 60px;
+}
+
+.main{
+    background: url(img/backmain.jpg) no-repeat right;
+    height: 600px;
+    margin: 60px 80px 0px 0px ;
+}
+
+.offer{
+    padding: 100px 0px 0px 430px;
+}
+
+h1{
+    font-size: 65px;
+    color: #1A102C;
+    letter-spacing: 10px;
+}
+h4{
+    font-size: 25px;
+    color: #505050;
+    margin-top: 15px;
+}
+.offer input{
+ height: 50px;
+text-align: center;
+border: 2px solid #505050;
+box-sizing: border-box;
+border-radius: 10px;
+background: none;
+color:#505050 ;
+font-size: 15px;
+padding: 0px 16px;
+margin: 20px 14px 0px 14px ;
+}
+.offer input:hover{
+    border:2px solid #3e0bca;
+}
+
+.about h2{
+    font-size: 30px;
+    color: #1A102C;
+    padding: 80px 0px 0px 630px;
+}
+.about hr, .info hr,.cases hr,.statistic hr,.review hr{
+width: 65px;
+border: 2px solid  #633499;
+background-color: #633499;
+margin: 10px 0px 0px 660px;
+}
+.about img{
+    margin: 10px 0px 0px 635px;
+}
+.about p{
+    font-size:20px ;
+    margin-left: 300px;
+}
+.about input{
+    height: 50px;
+    text-align: center;
+    border: 2px solid #505050;
+box-sizing: border-box;
+border-radius: 10px;
+background: none;
+color:#505050 ;
+font-size: 15px;
+padding: 0px 16px;
+margin: 20px 14px 50px 620px ;
+}
+.about input:hover{
+    border:2px solid #3e0bca;
+}
+.info{
+    background: url(img/backinfo.jpg);
+    height: 550px;
+}
+.info h2{
+    font-size: 30px;
+    color: #1A102C;
+    padding: 80px 0px 0px 618px;
+}
+.info hr{
+    margin: 10px 0px 0px 680px;
+}
+h3{
+    font-size: 20px;
+    color: #050348;
+}
+.card1 h3{
+    margin-left: 10px;
+}
+.card1 p{
+margin-left:-80px;
+}
+.card2 h3{
+    margin-left: -10px;
+}
+.card2 p{
+    margin-left: -105px;
+    }
+.card3 h3{
+    margin-left: -40px;
+}
+.card3 p{
+    margin-left: -100px;
+    }
+
+.card4 p{
+        margin-left: -85px;
+        }
+.card4 h3{
+    margin-left: -10px;
+}
+
+ .info p{
+font-size: 16px;
+width: 280px;
+text-align: center;
+}
+.cards{
+    justify-content: space-between;
+    display: flex;
+    margin: 70px 80px 70px 130px;
+}
+.cases{
+    margin-right: 350px;
+}
+.cases img{
+    margin: 50px 0px 50px 380px;
+}
+
+.cases h2{
+    padding: 80px 0px 0px 670px;
+}
+.cases hr{
+    margin: 10px 0px 0px 680px;
+}
+
+.cases p{
+    font-size:20px ;
+    margin-left: 400px;
+}
+.cases h3{
+    margin: 20px 0px 0px 150px;
+}
+h4{
+    font-size: 18px;
+    color:  #050348;
+}
+p1{
+    font-size: 18px;
+    margin-left: 150px;
+}
+.cases input{
+    height: 43px;
+    text-align: center;
+    border: 2px solid;
+    background: #A647E0;
+box-sizing: border-box;
+border-radius: 5px;
+color: white ;
+font-size: 15px;
+padding: 0px 16px;
+margin:20px 0px 0px 150px  ;
+display: block;
+}
+p2{
+    font-size: 18px;
+}
+
+.block{
+    display: flex;
+    justify-content: space-between;
+}
+.form {
+	box-shadow: 0px 17px 50px rgba(32, 40, 69, 0.14);
+	border-radius: 20px;
+	width: 600px;
+	text-align: center;
+	padding: 58px 64px 97px;
+	margin: 0 auto;
+    margin-bottom: 130px; 
+    margin-top: 130px;
+}
+fieldset{
+    border: 2px solid #3e0bca;
+    height: 300px;
+}
+legend{
+    font-size: 30px;
+    color: #1A102C;
+    margin:10px 0px 20px 0px ;
+}
+label{
+    font-size: 18px;
+   margin-left: -10px;
+  
+}
+select{
+width: 250px;
+height: 30px;
+display: block;
+margin-left:150px ;
+}
+
+
+.form input{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid;
+    background: #492e7a;
+box-sizing: border-box;
+border-radius: 5px;
+color: white ;
+font-size: 15px;
+padding: 0px 16px;
+margin:30px 18px 20px 0px  ;
+    
+}
+
+.statistic h2{
+    padding: 80px 0px 0px 600px;
+}
+.statistic{
+    background: url(img/backinfo.jpg);
+    height: 550px;
+}
+.statistic hr{
+    margin: 10px 0px 0px 700px;
+}
+.statistic .cards{
+    display: flex;
+    justify-content: space-between;
+    margin:90px 220px 0px 220px ;
+}
+
+.statistic h3{
+    margin: 10px auto;
+}
+.statistic p{
+    margin: 15px auto;
+    padding: 0 auto;
+
+}
+
+.review h2{
+    padding: 80px 0px 0px 670px;
+}
+.review hr{
+    margin: 10px 0px 0px 690px;
+}
+.review img{
+    
+ margin: 30px 0px 0px 665px;
+}
+.review p{
+    text-align: center;
+}
+.footer{
+    height: 1000px;
+    background: url(img/backcontact.jpg) no-repeat;
+    margin-top: 90px;
+}
+.footer h2{
+    padding: 80px 0px 0px 630px; 
+    color: white;
+}
+.footer hr{
+    margin: 10px 150px 0px 700px;
+    width: 65px;
+border: 2px solid white;
+background-color:white ;
+}
+.footer p{
+    color: white;
+    margin-top: 40px;
+}
+.contacts p{
+    margin-left: 400px;
+    margin-top: 40px;
+}
+.footer .place{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 400px 0px 400px;
+}
+.card1 p{
+
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 15px;
+}
+.card2 p{
+    padding-left: 35px;
+    margin-top: 23px;  
+    
+}
+.card3p p{
+    margin-top: 23px;  
+}
+
+
+.footer h3{
+    color: white;
+    padding: 80px 0px 0px 615px;
+    margin-top: 10px; 
+
+}
+.footer form{
+    margin:0px 470px 0px 470px ;
+}
+.footer input{
+    width: 200px;
+    height: 30px;
+    border: 2px solid;
+    background: white;
+box-sizing: border-box;
+border-radius: 5px;
+color: black ;
+font-size: 15px;
+}
+.inp{
+display:flex;
+ justify-content: space-between;
+}
+textarea{
+    margin-left: 80px;
+}
+.inpbtn input{
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    border: 2px solid;
+    background: white;
+box-sizing: border-box;
+border-radius: 5px;
+color: black ;
+font-size: 15px;
+margin-left: 120px;
+
+}
+.inpbtn input:hover{
+  border: #1e0f30; 
+}
+.nets{
+    margin:120px 0px 0px 540px ; 
+}
+.nets img{
+    margin-left: 50px;
+}
+footer{
+    margin: 120px 0px 0px 630px;
+}
