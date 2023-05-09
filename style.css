@@ -1,0 +1,512 @@
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-weight: 400; 
+    font-family: 'Inter';
+    src: url("fonts/Inter-Regular\ \(1\).ttf");
+  }
+  @font-face {
+    font-weight: 700; 
+    font-family: "Inter";
+    src: url("fonts/Inter-BoldItalic.ttf");
+  }
+
+
+/*-------------------   ШАПКА--------------------------  */
+.header{
+    background: #E9DEFF;
+    width: 100%;
+}
+.nav{
+    display: flex;
+    column-gap: 300px;
+    padding: 30px 70px;
+    width: 100%;
+
+}
+
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 30px;
+    height: 18px;
+    cursor: pointer;
+  }
+  .burger span{
+    height: 2px;
+    width: 25px;
+    background: black;
+    transition: all 0.3s ease 0s;
+  }
+  .burger::before,.burger::after{
+    content: '';
+    position: absolute;
+    height: 2px;
+    width: 40px;
+    background: black;
+    transition: all 0.3s ease 0s;
+  }
+  .burger::before{top: 0}
+  .burger::after{bottom: 0}
+  
+  .burger.active span{transform: scale(0)}
+  .burger.active::before{
+    top: 50%;
+    transform: rotate(-45deg) translate(0, 50%);
+  }
+  .burger.active::after{
+    bottom: 50%;
+    transform: rotate(45deg) translate(0, 50%);
+  }
+
+.open{
+    display: flex !important;
+}
+.close{
+    display: none !important;
+}
+@keyframes burgerAnimation{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+.logo,.footer-logo{
+    font-size: 25px;
+    font-weight: bold;
+}
+a{
+    text-decoration: none; 
+}
+.main-link{
+    font-size: 25px;
+    color: black;
+    
+}
+.main-link:hover{
+    color: rgb(90, 90, 90);
+}
+li{
+    list-style-type: none;
+    
+}
+ul{
+    display: flex;
+    column-gap: 50px;
+}
+
+/*-------------------   ГЛАВНАЯ --------------------------  */
+
+.container-main{
+    background: #3E2175;
+    width: 100%;
+    
+}
+.container-main-block{
+    background: url('images/background1.png') no-repeat center top;
+    width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+.main-title{
+    font-size: 50px;
+    letter-spacing: 5px;
+    color: white;
+    text-align: center;
+}
+.main-text{
+    font-size: 32px;
+    color: #E3E3E3;
+    text-align: center;
+    margin: 35px 0 35px 0;
+    
+}
+.offer{
+    width: 100%;
+    padding: 70px 170px;
+   
+}
+
+.main-btn{
+    display: block;
+    margin: auto;
+    width: 290px;
+    height: 76px;
+    background: #7324D8;
+    color: white;
+    font-size: 24px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    
+}
+.main-btn a{
+    color: white;
+}
+.main-btn:hover{
+    background: #450bcd;
+    transition: all 1s;
+}
+
+
+/*-------------------   МЕРОПРИЯТИЯ --------------------------  */
+
+.container-events,.container-hotels{
+    background: #e4cdff;
+    width: 100%;
+    height: 100%;
+}
+.block-events{
+    padding: 40px 70px;
+  
+}
+.card-image{
+    display: flex;
+    justify-content: center;
+    margin-top: 21px;
+}
+
+h2{
+    font-size: 45px;
+    text-align: center;
+}
+.text-event{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    padding: 70px 0;
+}
+.card-1,.card-2,.card-3{
+    width: 350px;
+    background: #F5EFEF;
+    border-radius: 5px;
+    
+    
+}
+.card-title{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+.card-content{
+    padding: 20px;
+}
+table{
+   margin-top: 25px;
+   margin-bottom: 25px;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+}
+
+th,td{
+    font-size: 28px;
+    font-weight: normal;
+}
+
+tr{
+display: flex;
+column-gap: 60px;
+}
+
+
+
+.card-more{
+    font-size: 26px;
+    color: #450bcd;
+}
+
+
+
+.arrow-6 {
+    display: flex;
+    justify-content: center;
+}
+.arrow-6 svg {
+    width: 100px;
+    height: auto;
+    margin: 0 2rem;
+    cursor: pointer;
+    overflow: visible;
+}
+.arrow-6 svg polygon, 
+.arrow-6 svg path {
+    transition: all 0.5s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #551eba;
+}
+.arrow-6 svg:hover polygon, 
+.arrow-6 svg:hover path {
+    transition: all 1s cubic-bezier(0.2, 1, 0.3, 1);
+    fill: #000;
+}
+.arrow-6 svg:hover .arrow-6-pl {
+    animation: arrow-6-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+.arrow-6 svg:hover .arrow-6-pl-fixed {
+    animation: arrow-6-fixed-anim 1s cubic-bezier(0.2, 1, 0.3, 1) infinite;
+}
+ 
+@keyframes arrow-6-anim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    5% {
+        transform: translateX(-0.1rem);
+    }
+    100% {
+        transform: translateX(1rem);
+        opacity: 0;
+    }
+}
+@keyframes arrow-6-fixed-anim {
+    5% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0.4;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.block-find-events,.block-find-results{
+    width: 670px;
+    height: 400px;
+    background: #5654c2;
+    margin: 10px auto;
+}
+.events{
+    display: flex;
+    padding: 80px;
+    flex-flow: column wrap;
+
+}
+.title-find,.title-results{
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+.label-event{
+    color: white;
+    font-size: 32px;
+
+}
+option.area{
+    font-size: 10px;
+}
+
+#GET-event{
+    width: 450px;
+    height: 60px;
+    border-radius:5px;
+    font-size: 20px;
+    color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+
+}
+.GET-event-input{
+    margin: 30px 15px;
+    border: white;
+   
+}
+.btn-find{
+    width: 450px;
+    height: 50px;
+    border-radius: 5px;
+    background: red;
+    color: white;
+    font-size: 25px;
+    border: 1px solid red;
+    margin: 30px 90px;
+   
+}
+
+/*-------------------   ДОСТОПРИМЕЧАТЕЛЬНОСТИ --------------------------  */
+
+.sight{
+    margin: 70px auto;
+}
+.accordion-block{
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #000;
+    border-left: none;
+    border-right: none;
+    padding: 15px;
+}
+.accordion-btn{
+    border: none;
+    background: white;
+    cursor: pointer;
+}
+.accordion-title{
+    font-size: 34px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+.active{
+    display: block;
+}
+.picture-block-1 img{
+    width: 500px;
+    height: 250px ;
+    border-radius: 5px;
+
+}
+/*-------------------   ОТЕЛИ --------------------------  */
+.picture-hotels img{
+    width: 268px;
+    height: 161px;
+    border-radius: 5px;
+}
+
+.hotel{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.hotel-title,.reviews-title{
+    padding: 70px 0;
+
+}
+.hotel-name,.hotel-price,.hotel-more{
+    font-size: 30px;
+}
+.hotel-price{
+    color: red;
+}
+.stars {
+    text-align: center;
+  }
+  
+  .star {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to bottom, rgba(197, 196, 196, 1) 0%, rgba(180, 179, 178, 1) 100%);
+    position: relative;
+  }
+  
+  
+  .star{
+    -webkit-clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
+    clip-path: polygon(50% 0%, 66% 27%, 98% 35%, 76% 57%, 79% 91%, 50% 78%, 21% 91%, 24% 57%, 2% 35%, 32% 27%);
+  }
+  
+  .checked{
+    background: rgb(202, 202, 15);
+  }
+/*-------------------   ОТЗЫВЫ --------------------------  */
+  .block-reviews{
+    width: 100%;
+    background: url('images/бэкграунд2.jpg') no-repeat center top;
+    background-attachment: fixed;
+    
+  }
+
+  .form-reviews{
+    width: 950px;
+    height: 548px;
+    border: 3px solid black;
+    background: transparent;
+    margin: 50px auto;
+    padding: 50px 0;
+    
+  }
+
+
+  .form-reviews input,.form-reviews textarea{
+    width:650px ;
+    height: 50px;
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1px solid white;
+    font-size: 20px;
+    padding-left: 10px;
+
+  }
+  .form-reviews textarea{
+    height: 200px;
+  }
+  .btn-review{
+    width: 650px;
+    height: 70px;
+    border: 1px solid #7324D8;
+    background: #7324D8;
+    color: white;
+    font-size: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 30px auto;
+    cursor: pointer;
+  }
+
+
+  .modal {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-left: -320px;
+    margin-top: -200px;
+    flex-direction: column;
+    width: 50%;
+    height: 300px;
+    background:rgb(133, 86, 203);
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.modal-btn-close {
+    font-size: 20px;
+    background: transparent;
+    border: none;
+    background: rgb(55, 21, 112);
+    color: white;
+    width: 200px;
+    height: 50px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    cursor: pointer;
+    
+
+}
+.show {
+    display: flex;
+}
+.modal__title{
+    font-size: 20px;
+
+}
+/*-------------------   ФУТЕР --------------------------  */
+.footer-logo{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}
